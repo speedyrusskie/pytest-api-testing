@@ -2,6 +2,7 @@ import requests
 import pytest
 
 @pytest.mark.rickandmorty
+def test_validate_parameters():
     name = "Rick"
     status = "Alive"
     res = requests.get("https://rickandmortyapi.com/api/character", params={"name":name, "status":status})
